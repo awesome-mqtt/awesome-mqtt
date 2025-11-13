@@ -43,16 +43,18 @@ MQTT is a lightweight client-server publish/subscribe messaging protocol, optimi
 
 - [mqtt.org](https://mqtt.org/).
 - [MQTT community wiki](https://github.com/mqtt/mqtt.org/wiki).
-- [Google Groups: MQTT](https://groups.google.com/forum/#!forum/mqtt).
+- [Google Groups: MQTT](https://groups.google.com/g/mqtt).
 - [IRC channel #mqtt on the freenode network](irc://irc.freenode.net/mqtt).
 - [A list of public brokers](https://moxd.io/2015/10/17/public-mqtt-brokers/).
 
 #### Blogs
 
 - [Ben Hardill](https://www.hardill.me.uk/wordpress/tag/mqtt/)
-- [HiveMQ](https://www.hivemq.com/blog/) - including Dominik Obermaier
 - [Jan-Piet Mens](https://jpmens.net/)
 - [Nick O'Leary](https://knolleary.net/)
+- [HiveMQ](https://www.hivemq.com/blog/) - including Dominik Obermaier
+- [EMQ](https://www.emqx.com/en/blog)
+- [Amazon AWS IoT Blog](https://aws.amazon.com/blogs/iot/tag/mqtt/)
 
 #### Talks
 
@@ -74,9 +76,6 @@ MQTT is a lightweight client-server publish/subscribe messaging protocol, optimi
 - [Moquette](https://github.com/moquette-io/moquette) - Java MQTT lightweight broker.
 - [Mosca](https://www.mosca.io/) - Node.js MQTT broker, which can be used Standalone or Embedded in another Node.js application.
 - [Mosquitto](https://mosquitto.org/) - *"*The"** Open Source MQTT Broker.
-     - [Free test server](https://mqtt.eclipseprojects.io) hosted by the Eclipse Foundation.
-     - [Authorization Plugin in Go](https://github.com/iegomez/mosquitto-go-auth) supports many types of logins.
-     - [Let's Encrypt Mosquitto Docker Container](https://hub.docker.com/r/pythonlinks/letsencrypt-mosquitto) makes it easy to encrypt.
 - [MyQttHub](https://myqtthub.com) - Cloud MQTT broker.
 - [Mystique](https://github.com/TheThingsIndustries/mystique) - An extendable MQTT broker written in Go, with HTTP capabilities for observability. Implements MQTT v3.1.1.
 - [RabbitMQ](https://www.rabbitmq.com/mqtt.html) - High performance messaging broker with MQTT Adapter.
@@ -118,7 +117,6 @@ MQTT is a lightweight client-server publish/subscribe messaging protocol, optimi
 - [mqtt-fuzz](https://github.com/F-Secure/mqtt_fuzz) - A simple fuzzer for the MQTT protocol.
 - [mqtt-malaria](https://github.com/etactica/mqtt-malaria) - scalability and load testing utilities for MQTT environments.
 - [mqtt-mirror](https://github.com/4nte/mqtt-mirror) - Mirror MQTT traffic from one broker to another. Available as a CLI tool, Helm chart or Docker image.
-- [MQTT-PWN](https://github.com/akamai-threat-research/mqtt-pwn) - IoT Broker penetration-testing and security assessment operations.
 - [mqtt_recorder](https://github.com/rpdswtk/mqtt_recorder) - Simple cli tool for recording and replaying MQTT messages.
 - [mqtt-shell](https://github.com/pidster-dot-org/mqtt-shell) - A simple interactive shell for MQTT.
 - [mqtt-spy](https://kamilfb.github.io/mqtt-spy/) - Java based MQTT frontend. Supports scripting.
@@ -141,43 +139,69 @@ MQTT is a lightweight client-server publish/subscribe messaging protocol, optimi
 
 ### Clients
 
+
+#### Multi-Platform
+- [Paho](https://www.eclipse.org/paho/) - Open source client implementations for C,C++, Java, Python, JavaScript, GoLang, C#, Rust, Android and Embedded (Arduino/mbed).
+- [mosquitto-clients](https://mosquitto.org/download/) [mosquitto_pub](https://mosquitto.org/man/mosquitto_pub-1.html) and [mosquitto_sub](https://mosquitto.org/man/mosquitto_pub-1.html) CLI clients for most operating systems and [libmosquitto](https://mosquitto.org/man/libmosquitto-3.html) for integration
+#### Python
 - [aiomqtt](https://github.com/mossblaser/aiomqtt) - Async Python MQTT client based on paho-mqtt.
-- [CocoaMQTT](https://github.com/emqx/CocoaMQTT) - MQTT for iOS and macOS written with Swift.
-- [emqttc](https://github.com/emqx/emqtt) - Asynchronous Erlang MQTT Client.
 - [gmqtt](https://github.com/wialon/gmqtt) - Python MQTT v5.0 client (asyncio-based).
 - [hbmqtt](https://github.com/beerfactory/hbmqtt) - Python MQTT client using asyncio.
-- [hivemq-mqtt-client](https://github.com/hivemq/hivemq-mqtt-client) - High-performance Java MQTT client library with different API flavours for MQTT 5.0 and 3.1.1.
-- [Hulaaki](https://github.com/suvash/hulaaki) - An Elixir library for clients communicating with MQTT brokers.
-- [luamqtt](https://github.com/xHasKx/luamqtt/) - Pure-lua MQTT v3.1.1 and v5.0 client.
-- [Machine Head](https://github.com/clojurewerkz/machine_head) - A Clojure MQTT Client.
 - [MiniMQTT](https://github.com/adafruit/Adafruit_CircuitPython_MiniMQTT) - MQTT Client Library for CircuitPython
-- [MIMIC MQTT Simulator](https://www.gambitcomm.com/site/mqttsimulator.php) - Simulate up to 100,000 MQTT clients per server for development/testing/deployment of IoT applications.
-- [Moscapsule](https://github.com/flightonary/Moscapsule) - MQTT Client for iOS written in Swift.
-- [Mosquitto-PHP](https://github.com/mgdm/Mosquitto-PHP) - A wrapper for the Mosquitto MQTT client library for PHP.
-- [mqtt_cpp](https://github.com/redboltz/mqtt_cpp) - MQTT client for C++14 based on Boost.Asio.
-- [mqtt_lua](https://geekscape.github.io/mqtt_lua/) - MQTT Client library for the Lua language.
-- [MQTT-C](https://github.com/LiamBindle/MQTT-C) - A portable MQTT C client for embedded systems and PCs alike.
-- [MQTT-Client-Framework](https://github.com/novastone-media/MQTT-Client-Framework) - iOS, macOS, tvOS native ObjectiveC MQTT Client Framework.
-- [mqtt-client](https://github.com/centamiv/mqtt-client) - A Polymer Web Component that implements a MQTT client (uses Paho mqttws31.js).
-- [mqtt-elements](https://github.com/mqttjs/mqtt-elements) - Polymer elements for MQTT.
-- [mqtt-rs](https://github.com/zonyitoo/mqtt-rs) - MQTT protocol library for Rust.
-- [mqtt-stats](https://github.com/gambitcomminc/mqtt-stats) - Subscriber client to monitor MQTT Topic Statistics
-- [mqtt-wrapper](https://www.webcomponents.org/element/hobbyquaker/mqtt-wrapper/elements/mqtt-wrapper) - Polymer Element that wraps other Elements and links them to MQTT topics.
-- [mqtt.dart](https://github.com/jnguillerme/mqtt.dart) - Dart MQTT client.
+#### JavaScript
 - [MQTT.js](https://github.com/mqttjs) - MQTT client for Node.js.
-- [mqtt](https://github.com/jeffallen/mqtt) - MQTT Clients, Servers and Load Testers in Go.
-- [mqttex](https://github.com/alfert/mqttex) - MQTT implementation in Elixir.
-- [MQTTKit](https://github.com/mobile-web-messaging/MQTTKit) - MQTT Objective-C client for iOS.
-- [mqtt_monitor](https://github.com/filipsPL/mqtt-monitor) - simple and lightweight console moniotor for mqtt topics, with eye-candies, in python 3.
-- [Paho](https://www.eclipse.org/paho/) - Open source client implementations (C/C++, Java, Python, JavaScript, Go, C#).
-- [pubsubclient](https://github.com/knolleary/pubsubclient) - A client library for the Arduino Ethernet Shield that provides support for MQTT.
-- [ruby-mqtt](https://github.com/njh/ruby-mqtt) - Pure Ruby gem that implements the MQTT protocol.
-- [rumqtt](https://github.com/AtherEnergy/rumqtt) - A fast, lock free pure Rust MQTT client.
-- [tcl-mqtt](https://github.com/Tingenek/tcl-mqtt) - Small library to connect to a MQTT broker. Very, very basic.
-- [TMQTTClient](https://github.com/jamiei/Delphi-TMQTT2) - MQTT Client Library for Delphi.
+- [mqtt-elements](https://github.com/mqttjs/mqtt-elements) - Polymer elements for MQTT.
+- [mqtt-wrapper](https://www.webcomponents.org/element/hobbyquaker/mqtt-wrapper/elements/mqtt-wrapper) - Polymer Element that wraps other Elements and links them to MQTT topics.
 - [Vert.x MQTT](https://github.com/vert-x3/vertx-mqtt) - Vert.x component that provides methods for connecting/disconnecting to a broker, publishing messages and subscribing to topics.
+#### Java
+- [hivemq-mqtt-client](https://github.com/hivemq/hivemq-mqtt-client) - High-performance Java MQTT client library with different API flavours for MQTT 5.0 and 3.1.1.
+#### Arduino
+- [pubsubclient](https://github.com/knolleary/pubsubclient) - A client library for the Arduino Ethernet Shield that provides support for MQTT.
+
+#### Erlang or Elixir
+- [emqttc](https://github.com/emqx/emqtt) - Asynchronous Erlang MQTT Client.
+- [mqttex](https://github.com/alfert/mqttex) - MQTT implementation in Elixir.
+#### C or C++
+- [mqtt_cpp](https://github.com/redboltz/mqtt_cpp) - MQTT client for C++14 based on Boost.Asio.
+- [MQTT-C](https://github.com/LiamBindle/MQTT-C) - A portable MQTT C client for embedded systems and PCs alike.
 - [wolfMQTT](https://www.wolfssl.com/products/wolfmqtt/) - A client implementation of the MQTT written in C for embedded use. It supports SSL/TLS via the wolfSSL library.
+#### Clojure
+- [Machine Head](https://github.com/clojurewerkz/machine_head) - A Clojure MQTT Client.
+#### Dart
+- [mqtt.dart](https://github.com/jnguillerme/mqtt.dart) - Dart MQTT client.
+#### DotNET
 - [MQTTnet](https://github.com/chkr1011/MQTTnet) - MQTT client and broker implementations in .NET.
+#### Delphi
+- [delphi-mqtt](https://github.com/pjde/delphi-mqtt) - MQTT server and client components
+- [TMQTTClient](https://github.com/jamiei/Delphi-TMQTT2) - MQTT Client Library for Delphi. Alpha and long term unmaintained
+#### GoLang
+- [go-mqtt](https://github.com/go-mqtt/mqtt) - MQTT client
+- [MQTT for Go](https://github.com/jeffallen/mqtt) - MQTT Clients, Servers and Load Testers in Go.
+#### Lua
+- [luamqtt](https://github.com/xHasKx/luamqtt/) - Pure-lua MQTT v3.1.1 and v5.0 client.
+- [mqtt_lua](https://geekscape.github.io/mqtt_lua/) - MQTT Client library for the Lua language.
+
+#### Objective-C
+- [MQTT-Client-Framework](https://github.com/novastone-media/MQTT-Client-Framework) - iOS, macOS, tvOS native ObjectiveC MQTT Client Framework.
+- [MQTTKit](https://github.com/mobile-web-messaging/MQTTKit) - MQTT Objective-C client for iOS.
+#### PHP
+- [Mosquitto-PHP](https://github.com/mgdm/Mosquitto-PHP) - A wrapper for the Mosquitto MQTT client library for PHP.
+#### Ruby
+- [ruby-mqtt](https://github.com/njh/ruby-mqtt) - Pure Ruby gem that implements the MQTT protocol.
+#### Rust
+- [mqtt-rs](https://github.com/zonyitoo/mqtt-rs) - MQTT protocol library for Rust.
+- [rumqtt](https://github.com/AtherEnergy/rumqtt) - A fast, lock free pure Rust MQTT client.
+#### Swift
+- [CocoaMQTT](https://github.com/emqx/CocoaMQTT) - MQTT for iOS and macOS written with Swift.
+- [Moscapsule](https://github.com/flightonary/Moscapsule) - MQTT Client for iOS written in Swift.
+#### TCL
+- [tcl-mqtt](https://github.com/Tingenek/tcl-mqtt) - Small library to connect to a MQTT broker. Very, very basic, and not maintained.
+
+### Development Tools
+
+- [MIMIC MQTT Simulator](https://www.gambitcomm.com/site/mqttsimulator.php) - Simulate up to 100,000 MQTT clients per server for development/testing/deployment of IoT applications.
+- [mqtt-stats](https://github.com/gambitcomminc/mqtt-stats) - Subscriber client to monitor MQTT Topic Statistics
+- [mqtt_monitor](https://github.com/filipsPL/mqtt-monitor) - simple and lightweight console moniotor for mqtt topics, with eye-candies, in python 3.
 
 ### Scripting
 
@@ -267,11 +291,10 @@ Here are complete firmwares to turn them into MQTT-controlled smart home nodes:
 - [graylog-plugin-mqtt](https://github.com/graylog-labs/graylog-plugin-mqtt) - MQTT Input Plugin for Graylog.
 - [influx4mqtt](https://github.com/hobbyquaker/influx4mqtt) - Subscribe to MQTT topics and insert into InfluxDB.
 - [mqtt2elasticsearch](https://github.com/hobbyquaker/mqtt2elasticsearch) - Send MQTT messages to Elasticsearch.
-- [mqtt2graphite](https://github.com/jpmens/mqtt2graphite) - Archived!  Instead use [mqttwarn](https://github.com/jpmens/mqttwarn) with [carbon](https://github.com/jpmens/mqttwarn/blob/master/HANDBOOK.md#carbon) plugin.
+- [mqttwarn](https://github.com/jpmens/mqttwarn) with [carbon](https://mqttwarn.readthedocs.io/en/latest/notifier-catalog.html#carbon) plugin.
 - [mqttcollect](https://github.com/jpmens/mqttcollect) - A collectd "Exec" plugin for MQTT.
 - [mqtthandler](https://github.com/changyuheng/MQTTHandler) - A Python logging handler module for MQTT.
 - [mqtt2mongodb](https://github.com/David-Lor/MQTT2MongoDB) - Subscribe to MQTT topics and insert into MongoDB.
-- [mqtt-firebase](https://www.npmjs.com/package/mqtt-firebase) - A CLI tool for subscribing to MQTT topics and dumping them to a firebase firestore DB.
 
 
 #### Smart Home Hardware Interfaces
@@ -306,7 +329,6 @@ Here are complete firmwares to turn them into MQTT-controlled smart home nodes:
 
 - [Home Assistant](https://www.home-assistant.io) - Home Automation system with native MQTT support, and the
 world's largest non-commercial Open Source project
-- [control-freak](https://github.com/catx23/control-freak) - IDE for IoT & friends. Built in MQTT support.
 - [Domoticz](https://www.domoticz.com/) - Home Automation system with MQTT support.
 - [FHEM](https://fhem.de/fhem.html) has a [MQTT module](https://fhem.de/commandref.html#MQTT) since V5.6.
 - [Home Assistant](https://www.home-assistant.io/) has a MQTT component.
@@ -323,7 +345,6 @@ world's largest non-commercial Open Source project
 
 - [Arilux_AL-LC0X](https://github.com/mertenats/Arilux_AL-LC0X) - This is an alternative firmware for Arilux LED controllers which uses MQTT.
 - [chromoflex2mqtt](https://github.com/owagner/chromoflex2mqtt) - Control Chromoflex USP3 RGB LED modules via MQTT.
-- [h801/mqtt](https://github.com/open-homeautomation/h801/tree/master/mqtt) - Alternative firmware for the H801 LED dimmer that uses MQTT as a control channel.
 - [hue2mqtt.js](https://github.com/hobbyquaker/hue2mqtt.js) - Interface between the Philips Hue bridge and MQTT.
 - [MQTT DMX Controller](https://github.com/hobbyquaker/mqtt-dmx-controller) - DMX Controller with MQTT support.
 - [mqtt-dmx-sequencer](https://github.com/hobbyquaker/mqtt-dmx-sequencer) - Headless counterpart to [MQTT DMX Controller](https://github.com/hobbyquaker/mqtt-dmx-sequencer) - use scenes and sequences exported from the MQTT DMX Controller and control them via MQTT.
@@ -394,7 +415,7 @@ world's largest non-commercial Open Source project
 - [unifi2mqtt](https://github.com/hobbyquaker/unifi2mqtt) - Publish connected clients from Ubiquiti Unifi to MQTT.
 - [Valetudo](https://github.com/Hypfer/Valetudo) - Xiaomi (Roborock) Vacuum Robots Firmware with MQTT and Webinterface.
 - [wlan-thermo-mqtt-addon](https://bitbucket.org/IOcastor/wlan-thermo-mqtt-addon/) - Addon for a popular DIY barbecue thermometer.
-- Tasker (Automation for Android) [MQTT Publisher Plugin](https://play.google.com/store/apps/details?id=net.nosybore.mqttpublishplugin).
+- [mqtt-tasker](https://github.com/stesie/TaskerMqtt) - Android Tasker mqtt plugin
 - [MQTT2ETCD](https://github.com/David-Lor/MQTT2ETCD) - MQTT-ETCD gateway: PUT keys on ETCD through MQTT, and watch ETCD key changes on MQTT topics
 
 
@@ -404,7 +425,6 @@ world's largest non-commercial Open Source project
 - [d3-MQTT-Topic-Tree](https://github.com/hardillb/d3-MQTT-Topic-Tree) - A MQTT Topic Tree viewer using the d3 collapsible tree and MQTT over websockets.
 - [HelloIoT](https://github.com/adrianromero/helloiot) - MQTT client and dashboard application.
 - [HOMR-REACT](https://github.com/klauserber/homr-react) - A configurable MQTT Visualization.
-- [IoT OnOff](https://www.iot-onoff.com/) - Configurable iOS/Android app.
 - [Linear MQTT Dashboard](https://github.com/ravendmaster/linear-mqtt-dashboard) - Easy, customizable control panel - MQTT-client.
 - [MMM-mqtt](https://github.com/javiergayala/MMM-mqtt) - This is an extension for the MagicMirror². It provides the ability to subscribe to MQTT topics and display them.
 - [MQTT Dash](https://play.google.com/store/apps/details?id=net.routix.mqttdash&hl=de) - Android App: With the app you can create dashboards for your MQTT enabled IoT Smart Home devices and applications.
@@ -430,6 +450,8 @@ Other tools that can be used to create Visualization/Dashboards can be found und
 
 ### Security, Encryption
 
+- [Let's Encrypt Mosquitto Docker Container](https://hub.docker.com/r/pythonlinks/letsencrypt-mosquitto) makes it easy to encrypt.
+- [MQTT-PWN](https://github.com/akamai-threat-research/mqtt-pwn) - IoT Broker penetration-testing and security assessment operations.
 - [Teserakt E4](https://teserakt.io/) - End-to-end encryption and key management for MQTT and other M2M protocols – Open-source and paid plans.
 
 

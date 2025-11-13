@@ -4,8 +4,6 @@ repos:
     hooks:
       - id: trailing-whitespace
       - id: end-of-file-fixer
-      - id: check-yaml
-      - id: check-added-large-files
   - repo: https://github.com/codespell-project/codespell
     rev: v2.4.1
     hooks:
@@ -24,5 +22,5 @@ repos:
     hooks:
       - id: lychee
         # Optionally include additional CLI arguments
-        args: ["--no-progress", "--max-cache-age 7d","--exclude", "file://LICENSE"]
+        args: ["--no-progress", "--max-cache-age","7d","--exclude", "file://LICENSE"]
         stages: [manual]
