@@ -304,8 +304,10 @@ Here are complete firmwares to turn them into MQTT-controlled smart home nodes:
 
 #### Smart Home Integration Software
 
+- [Home Assistant](https://www.home-assistant.io) - Home Automation system with native MQTT support, and the
+world's largest non-commercial Open Source project
 - [control-freak](https://github.com/catx23/control-freak) - IDE for IoT & friends. Built in MQTT support.
-- [Domoticz](https://www.domoticz.com/) - Domoticz beta supports MQTT.
+- [Domoticz](https://www.domoticz.com/) - Home Automation system with MQTT support.
 - [FHEM](https://fhem.de/fhem.html) has a [MQTT module](https://fhem.de/commandref.html#MQTT) since V5.6.
 - [Home Assistant](https://www.home-assistant.io/) has a MQTT component.
 - [Home.Pi](https://github.com/denschu/home.pi) is based on MQTT.
@@ -371,7 +373,7 @@ Here are complete firmwares to turn them into MQTT-controlled smart home nodes:
 - [chrome2mqtt](https://github.com/tbowmo/chrome2mqtt) - Python program to enable MQTT control endpoints for chromecasts (both audio and video).
 - [dashbutton2mqtt](https://github.com/hobbyquaker/dashbutton2mqtt) - Publish Amazon Dash Button presses to MQTT.
 - [flowerpower2mqtt](https://github.com/hobbyquaker/flowerpower2mqtt) - Publish measurements from Parrot Flower Power plant sensors to MQTT.
-- [gBridge](https://github.com/kservices/gBridge) - gBridge allows you to control (almost) any smart home device, any smart home software, with Google Assistant. Therefore, it transforms actions received from Google by voice commands to MQTT messages.
+- [gBridge](https://github.com/kservices/gBridge) - Control (almost) any smart home device, any smart home software, with Google Assistant. Therefore, it transforms actions received from Google by voice commands to MQTT messages.
 - [haiku2mqtt](https://github.com/forty2/haiku2mqtt) - A bridge between Haiku smart fans and MQTT.
 - [homely](https://github.com/baol/homely) - Collection of Go daemons for connecting Domoticz and other stuff.
 - [kobold2mqtt](https://github.com/krambox/kobold2mqtt) - Bridge between Vorwerk Kobold Vr200 internet gateway and MQTT.
