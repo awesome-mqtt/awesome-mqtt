@@ -80,7 +80,7 @@ Contributions welcome! Read the [contribution guidelines](contributing.md) first
 - [MyQttHub](https://myqtthub.com) - Cloud MQTT broker.
 - [Mystique](https://github.com/TheThingsIndustries/mystique) - An extendable MQTT broker written in Go, with HTTP capabilities for observability. Implements MQTT v3.1.1.
 - [RabbitMQ](https://www.rabbitmq.com/mqtt.html) - High performance messaging broker with MQTT Adapter.
-- [RobustMQ](http://robustmq.com) - Multi-protocol brokers written in Rust
+- [RobustMQ](http://robustmq.com) - Multi-protocol brokers written in Rust.
 - [SurgeMQ](https://zhen.org/categories/surgemq/) - High Performance MQTT Server and Client Libraries in Go.
 - [VerneMQ](https://vernemq.com/) - Apache2 licensed distributed MQTT broker, developed in Erlang.
 <!--lint disable double-link-->
