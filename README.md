@@ -179,6 +179,10 @@ Contributions welcome! Read the [contribution guidelines](contributing.md) first
 - [emqttc](https://github.com/emqx/emqtt) - Asynchronous Erlang MQTT Client.
 - [mqttex](https://github.com/alfert/mqttex) - MQTT implementation in Elixir.
 
+### Ballerina
+
+- [ballerina-mqtt](https://github.com/ballerina-platform/module-ballerina-mqtt) - Ballerina MQTT client based on paho-mqtt.
+
 ### C or C++
 
 - [mqtt_cpp](https://github.com/redboltz/mqtt_cpp) - MQTT client for C++14 based on Boost.Asio.
