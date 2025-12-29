@@ -148,62 +148,96 @@ Contributions welcome! Read the [contribution guidelines](contributing.md) first
 
 
 ### Multi-Platform
+
 - [Paho](https://www.eclipse.org/paho/) - Open source client implementations for C,C++, Java, Python, JavaScript, GoLang, C#, Rust, Android and Embedded (Arduino/mbed).
 - [mosquitto-clients](https://mosquitto.org/download/) - [mosquitto_pub](https://mosquitto.org/man/mosquitto_pub-1.html) and [mosquitto_sub](https://mosquitto.org/man/mosquitto_sub-1.html) CLI clients for most operating systems and [libmosquitto](https://mosquitto.org/man/libmosquitto-3.html) for integration.
+
 ### Python
+
 - [aiomqtt](https://github.com/mossblaser/aiomqtt) - Async Python MQTT client based on paho-mqtt.
 - [gmqtt](https://github.com/wialon/gmqtt) - Python MQTT v5.0 client (asyncio-based).
 <!--lint disable double-link-->
 - [hbmqtt Client](https://github.com/beerfactory/hbmqtt) - Python MQTT client using asyncio.
 <!--lint enable double-link-->
 - [MiniMQTT](https://github.com/adafruit/Adafruit_CircuitPython_MiniMQTT) - MQTT Client Library for CircuitPython.
+
 ### JavaScript
+
 - [MQTT.js](https://github.com/mqttjs) - MQTT client for Node.js.
 - [mqtt-elements](https://github.com/mqttjs/mqtt-elements) - Polymer elements for MQTT.
 - [mqtt-wrapper](https://www.webcomponents.org/element/hobbyquaker/mqtt-wrapper/elements/mqtt-wrapper) - Polymer Element that wraps other Elements and links them to MQTT topics.
 <!--lint disable double-link-->
 - [Vert.x Client](https://github.com/vert-x3/vertx-mqtt) - Vert.x component that provides methods for connecting/disconnecting to a broker, publishing messages and subscribing to topics.
 <!--lint enable double-link-->
+
 ### Java
+
 - [hivemq-mqtt-client](https://github.com/hivemq/hivemq-mqtt-client) - High-performance Java MQTT client library with different API flavours for MQTT 5.0 and 3.1.1.
+
 ### Erlang or Elixir
+
 - [emqttc](https://github.com/emqx/emqtt) - Asynchronous Erlang MQTT Client.
 - [mqttex](https://github.com/alfert/mqttex) - MQTT implementation in Elixir.
+
 ### C or C++
+
 - [mqtt_cpp](https://github.com/redboltz/mqtt_cpp) - MQTT client for C++14 based on Boost.Asio.
 - [MQTT-C](https://github.com/LiamBindle/MQTT-C) - A portable MQTT C client for embedded systems and PCs alike.
 - [wolfMQTT](https://www.wolfssl.com/products/wolfmqtt/) - A client implementation of the MQTT written in C for embedded use. It supports SSL/TLS via the wolfSSL library.
+
 ### Clojure
+
 - [Machine Head](https://github.com/clojurewerkz/machine_head) - A Clojure MQTT Client.
+
 ### Dart
+
 - [mqtt.dart](https://github.com/jnguillerme/mqtt.dart) - Dart MQTT client.
+
 ### DotNET
-<!--lint disable awesome-list-item-->
+
+- [HiveMQtt](https://github.com/hivemq/hivemq-mqtt-client-dotnet) - MQTT 5.0 compliant secure client with automatic back pressure management and TCP & WebSocket transport support.
 - [MQTTnet](https://github.com/chkr1011/MQTTnet) - MQTT client and broker .NET implementations.
-<!--lint enable awesome-list-item-->
+
 ### Delphi
+
 - [delphi-mqtt](https://github.com/pjde/delphi-mqtt) - MQTT server and client components.
 - [TMQTTClient](https://github.com/jamiei/Delphi-TMQTT2) - MQTT Client Library for Delphi. Alpha and long term unmaintained.
+
 ### GoLang
+
 - [go-mqtt](https://github.com/go-mqtt/mqtt) - MQTT client.
 - [MQTT for Go](https://github.com/jeffallen/mqtt) - MQTT Clients, Servers and Load Testers in Go.
+
 ### Lua
+
 - [luamqtt](https://github.com/xHasKx/luamqtt/) - Pure-lua MQTT v3.1.1 and v5.0 client.
 - [mqtt_lua](https://geekscape.github.io/mqtt_lua/) - MQTT Client library for the Lua language.
+
 ### Objective-C
+
 - [MQTT-Client-Framework](https://github.com/novastone-media/MQTT-Client-Framework) - iOS, macOS, tvOS native ObjectiveC MQTT Client Framework.
 - [MQTTKit](https://github.com/mobile-web-messaging/MQTTKit) - MQTT Objective-C client for iOS.
+
 ### PHP
+
 - [Mosquitto-PHP](https://github.com/mgdm/Mosquitto-PHP) - A wrapper for the Mosquitto MQTT client library for PHP.
+
 ### Ruby
+
 - [ruby-mqtt](https://github.com/njh/ruby-mqtt) - Pure Ruby gem that implements the MQTT protocol.
+
 ### Rust
+
 - [mqtt-rs](https://github.com/zonyitoo/mqtt-rs) - MQTT protocol library for Rust.
 - [rumqtt](https://github.com/AtherEnergy/rumqtt) - A fast, lock free pure Rust MQTT client.
+
 ### Swift
+
 - [CocoaMQTT](https://github.com/emqx/CocoaMQTT) - MQTT for iOS and macOS written with Swift.
 - [Moscapsule](https://github.com/flightonary/Moscapsule) - MQTT Client for iOS written in Swift.
+
 ### TCL
+
 - [tcl-mqtt](https://github.com/Tingenek/tcl-mqtt) - Small library to connect to a MQTT broker. Very, very basic, and not maintained.
 
 ## Scripting
