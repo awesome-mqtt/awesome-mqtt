@@ -201,7 +201,7 @@ Contributions welcome! Read the [contribution guidelines](contributing.md) first
 
 - [mqtt.dart](https://github.com/jnguillerme/mqtt.dart) - Dart MQTT client.
 
-### DotNET
+### C# / .NET
 
 - [HiveMQtt](https://github.com/hivemq/hivemq-mqtt-client-dotnet) - MQTT 5.0 compliant secure client with automatic back pressure management and TCP & WebSocket transport support.
 - [MQTTnet](https://github.com/chkr1011/MQTTnet) - MQTT client and broker .NET implementations.
