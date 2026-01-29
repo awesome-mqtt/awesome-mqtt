@@ -158,7 +158,7 @@ Contributions welcome! Read the [contribution guidelines](contributing.md) first
 
 ### Python
 
-- [aiomqtt](https://github.com/mossblaser/aiomqtt) - Async Python MQTT client based on paho-mqtt.
+- [aiomqtt](https://github.com/empicano/aiomqtt) - The idiomatic asyncio MQTT client.
 - [gmqtt](https://github.com/wialon/gmqtt) - Python MQTT v5.0 client (asyncio-based).
 <!--lint disable double-link-->
 - [hbmqtt Client](https://github.com/beerfactory/hbmqtt) - Python MQTT client using asyncio.
