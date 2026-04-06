@@ -4,6 +4,7 @@
 
 MQTT is a lightweight client-server publish/subscribe messaging protocol, optimized for high-latency or unreliable networks. This protocol is a good choice for Internet of Things applications, Telemetry, Sensor Networks, Smart Metering, Home Automation, Messaging and Notification Services.
 
+- [guardian-agent-prompts](https://github.com/milkomida77/guardian-agent-prompts) - 49 production-tested AI agent system prompts for MQTT-based multi-agent communication, automated message routing, and IoT orchestration. MIT licensed.
 ## Contents
 
 <!--lint disable double-link-->
