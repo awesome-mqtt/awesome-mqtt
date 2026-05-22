@@ -114,6 +114,7 @@ Contributions welcome! Read the [contribution guidelines](contributing.md) first
 - [Iotellect](https://iotellect.com/) - Low-code IoT/IIoT platform for industrial automation, SCADA, BMS and remote monitoring. Supports MQTT, OPC-UA, Modbus and 100+ protocols with visual development tools and edge-cloud integration.
 - [mainflux](https://www.mainflux.com/) - Device management, data aggregation, data management, data analytics,connectivity and message routing and event management. Supported by Linux Software Foundation.
 - [thingsboard](https://thingsboard.io/) - Device management, data collection, processing, event management, and visualization for your IoT projects.
+- [ForestHub.ai](https://foresthub.ai) - Platform for building, deploying and orchestrating embedded and edge AI agents over MQTT. Visual builder, local runtime, generated embedded code for ESP32/STM32, hybrid edge-cloud orchestration.
 
 
 ## Tools
