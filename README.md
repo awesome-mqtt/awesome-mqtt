@@ -360,6 +360,7 @@ Here are complete firmwares to turn them into MQTT-controlled smart home nodes:
 
 ### Location Tracking
 
+- [ADSBiq](https://adsbiq.com/api/other/mqtt) - Authenticated retained-delta aircraft state over MQTT WebSockets for bounded IoT and location-aware integrations.
 - [OwnTracks](https://owntracks.org/) - Location tracking and geofencing for MQTT.
 
 ### Logging
