@@ -350,7 +350,7 @@ Here are complete firmwares to turn them into MQTT-controlled smart home nodes:
 
 ### Monitoring
 
-- [mqttwarn](https://mqttwarn.readthedocs.io/en/latest/) - Route and transform MQTT notifications, with 70+ built-in adapters for databases, messaging and other notification sinks.
+- [mqttwarn](https://mqttwarn.readthedocs.io/) - Route and transform MQTT notifications, with 70+ built-in adapters for databases, messaging and other notification sinks.
 - [snmp2mqtt](https://c0d3.sh/andre/snmp2mqtt) - Python based SNMP v2 and v3 bridge to MQTT, active project in late 2025.
 - [ccusage-mqtt](https://github.com/george-vice/ccusage-mqtt) - Publishes Claude Code (Anthropic's AI coding agent) usage telemetry to MQTT with Home Assistant auto-discovery. 15 sensors, mood classifier.
 - [check-mqtt](https://github.com/jpmens/check-mqtt) - A Nagios/Icinga plugin for checking connectivity to an MQTT broker.
@@ -370,7 +370,7 @@ Here are complete firmwares to turn them into MQTT-controlled smart home nodes:
 - [influx4mqtt](https://github.com/hobbyquaker/influx4mqtt) - Subscribe to MQTT topics and insert into InfluxDB.
 - [mqtt2elasticsearch](https://github.com/hobbyquaker/mqtt2elasticsearch) - Send MQTT messages to Elasticsearch.
 <!--lint disable double-link-->
-- [mqttwarn](https://github.com/jpmens/mqttwarn) - Use with [carbon](https://mqttwarn.readthedocs.io/en/latest/notifier-catalog.html#carbon) plugin.
+- [mqttwarn](https://github.com/jpmens/mqttwarn) - Use with [carbon](https://mqttwarn.readthedocs.io/notifier-catalog.html#carbon) plugin.
 <!--lint enable double-link-->
 - [mqttcollect](https://github.com/jpmens/mqttcollect) - A collectd "Exec" plugin for MQTT.
 - [mqtthandler](https://github.com/changyuheng/MQTTHandler) - A Python logging handler module for MQTT.
