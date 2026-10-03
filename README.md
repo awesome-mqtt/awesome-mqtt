@@ -153,6 +153,7 @@ Contributions welcome! Read the [contribution guidelines](contributing.md) first
 - [mqtt-wall](https://github.com/bastlirna/mqtt-wall) - Subscription only web-based client – like Twitter wall for MQTT.
 - [mqtt-wildcard](https://github.com/hobbyquaker/mqtt-wildcard) - Node.js Module to match a MQTT Topic against wildcards.
 - [MQTT.fx](https://mqttfx.jensd.de/) - MQTT Client written in Java based on Eclipse Paho. Supports scripting.
+- [Mqttable](https://mqttable.com/) - A desktop MQTT workbench for traffic inspection, replay, load testing, fault injection, and PCAP analysis.
 - [mqttcli](https://github.com/shirou/mqttcli) - MQTT Client for shell scripting.
 - [MQTTForge](https://github.com/ibrahimilkhan/mqtt-forge) - Test console that builds a broker's topics into a live tree, shows every frame on the wire, and publishes by hand. Desktop app for macOS, Windows and Linux, or a single Docker image.
 - [MQTTInspector](https://github.com/ckrey/MQTTInspector) - A general MQTT testing app for iOS (iPhone and iPad).
