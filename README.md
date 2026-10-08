@@ -263,6 +263,7 @@ Contributions welcome! Read the [contribution guidelines](contributing.md) first
 
 ### Rust
 
+- [AimDB](https://github.com/aimdb-dev/aimdb) - Typed, versioned data contracts over MQTT from `no_std` microcontrollers (Embassy) to the cloud (Tokio), with schema migrations at the hub.
 - [mqtt-rs](https://github.com/zonyitoo/mqtt-rs) - MQTT protocol library for Rust.
 - [mqtt-typed-client](https://github.com/holovskyi/mqtt-typed-client) - Type-safe async MQTT client built on rumqttc, with derive macros for typed topics, automatic (de)serialization, and tree-based message routing.
 - [rumqtt](https://github.com/AtherEnergy/rumqtt) - A fast, lock free pure Rust MQTT client.
