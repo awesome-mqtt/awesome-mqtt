@@ -243,6 +243,7 @@ Contributions welcome! Read the [contribution guidelines](contributing.md) first
 
 - [go-mqtt](https://github.com/go-mqtt/mqtt) - MQTT client.
 - [MQTT for Go](https://github.com/jeffallen/mqtt) - MQTT Clients, Servers and Load Testers in Go.
+- [mqttv5](https://github.com/ashtonian/mqttv5) - MQTT v5 client with allocation-free PUBLISH decoding, session resume, file-backed QoS 1/2 persistence and multi-broker failover.
 
 ### Lua
 
