@@ -133,6 +133,7 @@ Contributions welcome! Read the [contribution guidelines](contributing.md) first
 - [LazyMQTT](https://github.com/ScottFelder/lazymqtt) - A fast, terminal-UI MQTT client written in Rust — inspired by MQTT Explorer, but keyboard-driven and living in your terminal.
 - [Mer-cli](https://github.com/iotmertech/iot-data-generator) - A high-performance IoT data generator written in Rust. Supports MQTT, HTTP, and TCP for simulating realistic sensor payloads with Handlebars templates.
 - [mockd](https://github.com/getmockd/mockd) - Multi-protocol mock server with a built-in MQTT broker supporting QoS 0-2, retained messages, topic patterns, and device simulation for IoT development and testing.
+- [MockForge](https://github.com/SaaSy-Solutions/mockforge) - Open-source multi-protocol mock server written in Rust with a built-in MQTT 3.1.1/5.0 broker for testing, alongside HTTP, gRPC, GraphQL, WebSocket, Kafka and AMQP mocks.
 - [moxy](https://github.com/jvermillard/moxy) - A Golang MQTT proxy providing useful output traces to monitor and troubleshoot your MQTT communications.
 - [MQTT Board](https://github.com/flespi-software/MQTT-Board) - Open-source diagnostic-oriented MQTT client tool.
 - [MQTT Commander for iOS](https://mqttcommander.com) - Native iPhone and iPad client with a live topic tree, topic board, JSON inspection, and a 13-stage Connection Doctor. Supports MQTT 3.1.1 and 5.0 over TCP, TLS, mTLS and WebSocket.
