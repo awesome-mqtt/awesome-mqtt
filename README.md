@@ -188,6 +188,7 @@ Contributions welcome! Read the [contribution guidelines](contributing.md) first
 
 - [Paho](https://www.eclipse.org/paho/) - Open source client implementations for C,C++, Java, Python, JavaScript, GoLang, C#, Rust, Android and Embedded (Arduino/mbed).
 - [mosquitto-clients](https://mosquitto.org/download/) - [mosquitto_pub](https://mosquitto.org/man/mosquitto_pub-1.html) and [mosquitto_sub](https://mosquitto.org/man/mosquitto_sub-1.html) CLI clients for most operating systems and [libmosquitto](https://mosquitto.org/man/libmosquitto-3.html) for integration.
+- [TestMQTT](https://testmqtt.com/) - Free browser-based MQTT client for testing any broker over WebSockets: connect, subscribe, publish and debug topics with no install or sign-up.
 
 ### Python
 
