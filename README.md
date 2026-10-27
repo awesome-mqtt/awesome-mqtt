@@ -109,6 +109,7 @@ Contributions welcome! Read the [contribution guidelines](contributing.md) first
 - [Azure IoT Hub](https://azure.microsoft.com/en-us/services/iot-hub/) - Enable highly secure and reliable communication between your IoT application and the devices it manages. Azure IoT Hub provides a cloud-hosted solution backend to connect virtually any device. Extend your solution from the cloud to the edge with per-device authentication, built-in device management, and scaled provisioning.
 - [CloudMQTT](https://www.cloudmqtt.com/) - Hosted message broker for the Internet of Things. Perfectly configured and optimized message queues for IoT, ready in seconds.
 - [CloudAMQP](https://www.cloudamqp.com/docs/mqtt.html) - Hosted AMQP brokers with MQTT support.
+- [ConnectMQ](https://connectmq.com/) - Managed MQTT broker with MQTT 3.1.1 and 5.0, TLS, WebSockets and per-topic access control, no servers to run.
 - [CrystalMQ](https://www.bevywise.com/hosted-mqtt-server/) - Fully Managed Cloud MQTT Broker for large scale deployments.
 - [flespi](https://flespi.com/mqtt-broker) - Free and secure cloud MQTT broker with private namespaces, MQTT 3.1.1 and MQTT 5.0 support and gorgeous limits.
 - [Google Cloud IoT](https://cloud.google.com/solutions/iot/) - Cloud managed MQTT service.
