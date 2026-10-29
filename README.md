@@ -415,6 +415,7 @@ Here are complete firmwares to turn them into MQTT-controlled smart home nodes:
 - [knx-mqtt-bridge](https://github.com/pakerfeldt/knx-mqtt-bridge) - Bridges KNX and MQTT using the knx.js library.
 - [knx2mqtt](https://github.com/owagner/knx2mqtt) - Interface between the KNX home automation standard and MQTT.
 - [mcsMQTT](https://shop.homeseer.com/products/mcsmqtt-software-plug-in-for-hs3) - Plug-in for HS3 (HomeSeer).
+- [mqtt2matter](https://github.com/hobbyquaker/mqtt2matter) - Create bridged Matter devices and control via MQTT. Supports manual configuration, zigbee2mqtt, Home Assistant Autodiscovery, ESPHome, ...
 - [mqtt-dss-bridge](https://github.com/cgHome/mqtt-dss-bridge) - MQTT digitalSTROM-Server Bridge.
 - [mqtt-unifi-protect-bridge](https://github.com/terafin/mqtt-unifi-protect-bridge) - Adding motion-status from UniFi Protect Cameras to MQTT.
 <!--lint disable double-link-->
