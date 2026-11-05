@@ -171,6 +171,7 @@ Contributions welcome! Read the [contribution guidelines](contributing.md) first
 - [SimpleMQTT](https://simplemqtt.theoi.de/) - A Slack app to send messages from Slack to MQTT brokers with slash commands.
 - [Spitfire](https://usespitfire.com/guides/mqtt-load-testing) - Self-hosted distributed load testing platform with a web UI; simulates thousands of MQTT devices (QoS 0/1/2 publish, subscribe, request-reply) alongside HTTP, Kafka and other protocols. Commercial, with a free edition.
 - [TopicBench](https://github.com/unipsycho/topicbench) - Free open-source multi-broker MQTT explorer and monitor desktop client, written in Rust.
+- [TrailTransfer](https://github.com/RainerGewalt/trailtransfer) - MQTT-controlled rclone worker for edge file transfers with a local policy and a hash-chained, independently verifiable evidence journal.
 - [Wireshark-MQTT](https://github.com/menudoproblema/Wireshark-MQTT) - MQTT dissector for Wireshark.
 - [VSMQTT](https://github.com/rpdswtk/vsmqtt) - Simple MQTT client integrated in Visual Studio Code.
 - [MQTTX](https://github.com/emqx/MQTTX) - Cross-platform MQTT desktop client open sourced by EMQ, which supports macOS, Linux, and Windows.
