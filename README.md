@@ -146,6 +146,7 @@ Contributions welcome! Read the [contribution guidelines](contributing.md) first
 - [MQTT CLI](https://github.com/hivemq/mqtt-cli) - A command line interface for connecting various MQTT clients supporting MQTT 5.0 and 3.1.1.
 - [mqtt-client](https://github.com/sdeancos/mqtt-client) - Simple MQTT Client command line (Python) (use paho lib).
 - [mqtt-forget](https://github.com/hobbyquaker/mqtt-forget) - Command line tool to remove retained MQTT topics by wildcard.
+- [MQTT Gateway](https://github.com/kgvicente/mqtt-gateway) - Multi-broker HTTP authentication and topic permissions gateway (Mosquitto, EMQX, VerneMQ) with real-time UI and zero database.
 - [mqtt-fuzz](https://github.com/F-Secure/mqtt_fuzz) - A simple fuzzer for the MQTT protocol.
 - [mqtt-malaria](https://github.com/etactica/mqtt-malaria) - Scalability and load testing utilities for MQTT environments.
 - [mqtt-mirror](https://github.com/4nte/mqtt-mirror) - Mirror MQTT traffic from one broker to another. Available as a CLI tool, Helm chart or Docker image.
