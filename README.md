@@ -134,6 +134,7 @@ Contributions welcome! Read the [contribution guidelines](contributing.md) first
 - [homie-home-assistant-discovery](https://github.com/labodj/homie-home-assistant-discovery) - Node.js CLI and library that maps Homie MQTT metadata to Home Assistant MQTT discovery payloads.
 - [imqtt](https://github.com/shafreeck/imqtt) - Interactive MQTT packet manipulation shell based on IPython.
 - [IoT-Testware](https://projects.eclipse.org/projects/technology.iottestware) - The Eclipse IoT-Testware is a collection of conformance test suites for IoT protocols enriched with additional tools for fuzzing and performance testing.
+- [Katman MQTT](https://www.katmanmqtt.com/) - MQTT client for Windows and Linux with reusable publish templates, selected-topic logging, and request/response debugging tools.
 - [LabOverWire](https://laboverwire.com/features) - Visual diagram editor for designing MQTT topologies, built with Rust (WebAssembly) and TypeScript. Features live in-browser simulation, code generation, and AsyncAPI export.
 - [LazyMQTT](https://github.com/ScottFelder/lazymqtt) - A fast, terminal-UI MQTT client written in Rust — inspired by MQTT Explorer, but keyboard-driven and living in your terminal.
 - [LibreDB Studio](https://github.com/libredb/libredb-studio) - Open source web database IDE with a read-only MQTT 5.0 connection: browse a broker's live topic tree with retained messages and read topics, including Sparkplug B payloads.
