@@ -359,6 +359,7 @@ Here are complete firmwares to turn them into MQTT-controlled smart home nodes:
 
 ### Operating System
 
+- [BetterVolume](https://github.com/machintrucbidule/BetterVolume) - Windows 11 tray volume panel that exposes each PC to Home Assistant through MQTT discovery: audio output, volume, mute, microphone and media buttons, in both directions.
 - [updates2mqtt](https://updates2mqtt.rhizomatics.org.uk) - Check for Docker image updates and publish to MQTT, in structure to support Home Assistant's automated Updates and Discovery.
 - [mqtt-os-status](https://github.com/oskarhagberg/mqtt-os-status) - Operating-system related data, published to an MQTT broker at fixed intervals.
 - [mqttlauncher](https://github.com/jpmens/mqtt-launcher) - Execute shell commands triggered by published MQTT messages.
