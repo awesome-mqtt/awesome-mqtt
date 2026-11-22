@@ -12,6 +12,8 @@ one of these checks:
   Responses that are ambiguous (403/429/5xx/timeouts; many sites block bots)
   do NOT remove an entry; they are only listed in the report.
 
+Every GitHub repository link in README.md gets its star count appended (<small>★&nbsp;1.2k</small>).
+
 Entries can be exempted by adding their URL to scripts/quality-gate-exceptions.txt.
 
 Dropped and uncertain entries are written to excluded.md so contributors can see
@@ -48,6 +50,10 @@ ITEM_RE = re.compile(r"^\s*[-*] \[(?P<name>[^\]]+)\]\((?P<url>[^)\s]+)\)")
 GITHUB_RE = re.compile(
     r"^https?://(?:www\.)?github\.com/(?P<owner>[A-Za-z0-9-_.]+)/(?P<repo>[A-Za-z0-9-_.]+?)(?:\.git)?(?:[/#?].*)?$"
 )
+LINK_RE = re.compile(r"\]\((?P<url>https?://[^)\s]+)\)")
+# GitHub URL suffixes after owner/repo that still point at the repository itself
+# (gets a star count); anything else (wiki, issues, ...) is left alone.
+REPO_PAGE_SUFFIX = re.compile(r"^(?:\.git)?/?(?:(?:tree|blob)/.*)?(?:#.*)?$")
 # github.com/<first>/... paths that are not repositories
 GITHUB_NON_REPO = {"orgs", "topics", "sponsors", "marketplace", "features", "collections", "apps"}
 
@@ -200,8 +206,7 @@ def repo_key(url: str) -> tuple[str, str]:
     return owner.lower(), repo.lower()
 
 
-def check_github(entries: list[Entry], token: str) -> None:
-    info = fetch_github(sorted({repo_key(e.url) for e in entries}), token)
+def check_github(entries: list[Entry], info: dict[tuple[str, str], dict | None]) -> None:
     for e in entries:
         reasons = gate_reasons(info[repo_key(e.url)])
         if reasons:
@@ -295,6 +300,49 @@ def render(lines: list[str], drop: set[int]) -> list[str]:
     return out
 
 
+def repo_page_key(url: str) -> tuple[str, str] | None:
+    """(owner, repo) if the URL points at a GitHub repository itself, else None."""
+    m = GITHUB_RE.match(url)
+    if not m or not github_repo(url):
+        return None
+    if not REPO_PAGE_SUFFIX.match(url[m.end("repo") :]):
+        return None
+    return repo_key(url)
+
+
+def list_item_repo_keys(lines: list[str]) -> set[tuple[str, str]]:
+    """All repositories linked from list items, main link or inside the description."""
+    return {
+        key
+        for line in lines
+        if ITEM_RE.match(line)
+        for m in LINK_RE.finditer(line)
+        if (key := repo_page_key(m.group("url")))
+    }
+
+
+def format_stars(n: int) -> str:
+    if n < 1000:
+        return str(n)
+    if n < 10000:
+        return f"{n / 1000:.1f}k".replace(".0k", "k")
+    return f"{round(n / 1000)}k"
+
+
+def add_stars(lines: list[str], info: dict[tuple[str, str], dict | None]) -> list[str]:
+    """Append the star count after every GitHub repository link in list items,
+    same markup as on github.com/hobbyquaker: <small>★&nbsp;1.2k</small>."""
+
+    def annotate(m: re.Match) -> str:
+        key = repo_page_key(m.group("url"))
+        repo = info.get(key) if key else None
+        if not repo:
+            return m.group(0)
+        return f"{m.group(0)} <small>★&nbsp;{format_stars(repo['stargazerCount'])}</small>"
+
+    return [LINK_RE.sub(annotate, line) if ITEM_RE.match(line) else line for line in lines]
+
+
 def write_report(path: Path, entries: list[Entry]) -> None:
     failed = [e for e in entries if e.status == FAIL]
     unsure = [e for e in entries if e.status == UNSURE]
@@ -346,11 +394,15 @@ def main() -> int:
     exceptions = load_exceptions()
     checked = [e for e in entries if e.url.rstrip("/") not in exceptions]
 
-    check_github([e for e in checked if github_repo(e.url)], token)
+    gh_entries = [e for e in entries if github_repo(e.url)]
+    keys = list_item_repo_keys(lines) | {repo_key(e.url) for e in gh_entries}
+    info = fetch_github(sorted(keys), token)
+
+    check_github([e for e in gh_entries if e in checked], info)
     check_links([e for e in checked if not github_repo(e.url)])
 
     drop = {e.line_no for e in entries if e.status == FAIL}
-    args.readme.write_text("".join(render(lines, drop)))
+    args.readme.write_text("".join(add_stars(render(lines, drop), info)))
     write_report(args.report, entries)
 
     counts = {s: sum(e.status == s for e in entries) for s in (PASS, FAIL, UNSURE)}

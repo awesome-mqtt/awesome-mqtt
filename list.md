@@ -336,7 +336,7 @@ Here are complete firmwares to turn them into MQTT-controlled smart home nodes:
 
 - [ESPEasy](https://www.letscontrolit.com/wiki/index.php?title=ESPEasy) - Turns ESP into a multifunction sensor device for <abbr title="Home automation">HA</abbr> solutions with web-based configuration.
 - [ESPHome](https://esphome.io/) - Builds ESP8266/ESP32 firmware from concise YAML descriptions, uploads to and manages flashed devices.
-- [Espurna](https://github.com/xoseperez/espurna) - <abbr title="Home automation">HA</abbr> firmware for ESP8266-based devices with rich web UI and ≈120 devices supported out of the box.
+- [Espurna](https://github.com/xoseperez/espurna) - Home automation firmware for ESP8266-based devices with rich web UI and ≈120 devices supported out of the box.
 <!--lint disable double-link-->
 - [HomeGenie Mini](https://homegenie.it/) - Smart device firmware for ESP8266/ESP32 supporting remote monitoring and controlling via MQTT with end-to-end encryption. The firmware is open source and it can be uploaded to the ESP device directly from the website.
 <!--lint enable double-link-->
