@@ -11,4 +11,39 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - run: npx awesome-lint
+      - run: npx awesome-lint list.md
+
+  # Informational only: tells contributors whether their new entry will show up
+  # in README.md. Never fails the PR, since every PR to list.md is accepted.
+  Quality_Gate_Preview:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Check new entries against the quality gate
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python3 scripts/build_readme.py --readme /tmp/README.md --report /tmp/excluded.md
+          added=$(git diff "origin/${{ github.base_ref }}"...HEAD -- list.md \
+            | grep -E '^\+\s*[-*] \[' | grep -oE '\]\(https?://[^)[:space:]]+\)' | sed -E 's/^\]\(|\)$//g' || true)
+          {
+            echo "## Quality gate preview"
+            echo
+            if [ -z "$added" ]; then
+              echo "No new entries in list.md."
+            fi
+            for url in $added; do
+              row=$(grep -F "]($url)" /tmp/excluded.md | head -1 || true)
+              if [ -n "$row" ] && grep -qF "$row" <(sed -n '/^## Hidden/,/^## Could not/p' /tmp/excluded.md); then
+                echo "- ⚠️ $url will be in list.md but **hidden from README.md** for now: $(echo "$row" | awk -F'|' '{print $4}')"
+              else
+                echo "- ✅ $url passes the quality gate"
+              fi
+            done
+          } | tee -a "$GITHUB_STEP_SUMMARY"

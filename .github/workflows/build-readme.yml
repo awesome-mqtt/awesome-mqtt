@@ -1,0 +1,57 @@
+name: Build README
+
+# Generates README.md (and excluded.md) from list.md, hiding entries that
+# fail the quality gate. Runs daily so entries drop out / come back as projects
+# change, and after every change to list.md so merged PRs show up right away.
+on:
+  schedule:
+    - cron: "23 3 * * *"
+  workflow_dispatch:
+  push:
+    branches: [master]
+    paths:
+      - list.md
+      - scripts/**
+      - .github/workflows/build-readme.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-readme
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Build README.md from list.md
+        run: python3 scripts/build_readme.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Report
+        run: cat excluded.md >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Lint generated README
+        run: npx awesome-lint README.md
+
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md excluded.md
+          if git diff --cached --quiet; then
+            echo "No changes."
+          else
+            git commit -m "Update README.md from list.md"
+            git push
+          fi

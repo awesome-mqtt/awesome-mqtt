@@ -1,0 +1,3 @@
+# URLs listed here skip the quality gate and are always shown in README.md.
+# One URL per line, exactly as in list.md, optionally followed by "  # reason".
+# Use sparingly, e.g. for foundational projects that are "done" rather than dead.
