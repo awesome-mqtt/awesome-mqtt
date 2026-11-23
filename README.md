@@ -87,6 +87,7 @@ Contributions welcome! Read the [contribution guidelines](contributing.md) first
 <!--lint enable double-link-->
 - [MyQttHub](https://myqtthub.com) - Cloud MQTT broker.
 - [Mystique](https://github.com/TheThingsIndustries/mystique) - An extendable MQTT broker written in Go, with HTTP capabilities for observability. Implements MQTT v3.1.1.
+- [PLCcom MQTT Standalone Broker](https://www.indi-an.com/en/plccom/mqtt/mqtt-standalone-broker/) - Free MQTT broker for Windows. MQTT 3.1.1 and 5.0 over TLS, TCP and WebSocket, several listeners, access control.
 - [RabbitMQ](https://www.rabbitmq.com/mqtt.html) - High performance messaging broker with MQTT Adapter.
 - [RobustMQ](http://robustmq.com) - Multi-protocol brokers written in Rust.
 - [Straum](https://github.com/straum-io/straum) - Experimental clustered MQTT 3.1.1 and 5 broker that acknowledges a publish only after a majority of its nodes has committed it.
