@@ -173,6 +173,7 @@ Contributions welcome! Read the [contribution guidelines](contributing.md) first
 - [MQTT Explorer](https://mqtt-explorer.com/) - Tool to visualize your MQTT topics in a topic hierarchy, a MQTT swiss-army knife.
 - [MQTT TUI](https://github.com/EdJoPaTo/mqttui) - Simple lightweight terminal based MQTT monitor and publisher.
 - [MQTTProbe](https://github.com/bluegrassiot/mqttprobe) - Cross platform MQTT diagnostic client for IIoT with live topic browsing, payload decoding across multiple formats, charting, built in emulators, and advanced Sparkplug B integration.
+- [PLCcom MQTT Client Tool](https://www.indi-an.com/en/plccom/mqtt/mqtt-client-tool/) - Free MQTT client for Windows. MQTT 3.1.1 and 5.0 over TLS, TCP and WebSocket, publish, subscribe and request/response.
 - [Python MQTT Client Shell](https://github.com/bapowell/python-mqtt-client-shell) - Text console-based, interactive shell for exercising various tasks associated with MQTT client communications.
 - [RunMQTT MQTT Topic ACL Linter](https://runmqtt.com/mqtt-acl-linter) - Browser-based, local-only validator for MQTT topic-filter ACLs that checks wildcard breadth, tenant boundaries, publish/subscribe direction, placeholders, and overlapping rules. [Source and method](https://github.com/visoar/mqtt-acl-linter).
 - [SimpleMQTT](https://simplemqtt.theoi.de/) - A Slack app to send messages from Slack to MQTT brokers with slash commands.
