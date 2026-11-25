@@ -566,6 +566,7 @@ Here are complete firmwares to turn them into MQTT-controlled smart home nodes:
 - [MYHELLOIOT](https://adrianromero.github.io/myhelloiot/) - MQTT dashboard application.
 - [node-red-dashboard](https://github.com/node-red/node-red-dashboard) - A dashboard UI for Node-RED.
 - [PlotJuggler](https://github.com/facontidavide/PlotJuggler) - Visualize time series (from sources such as: MQTT, Websockets, ZeroMQ, UDP, etc., supports data formats such as JSON, CBOR, BSON, Message Pack, etc.). It is a fast, powerful and intuitive cross-platform tool.
+- [Routix Dash](https://routix-dash.com) - iPhone and iPad app for live dashboards from MQTT brokers, HTTP APIs, WebSocket and Server-Sent Events, with charts, gauges, switches and sliders that publish back.
 - [ZigDash](https://gitlab.com/tamamg/zigdash) - Free, open-source Material 3 MQTT dashboard for Android, built for Zigbee2MQTT with automatic device discovery. Also on [Google Play](https://play.google.com/store/apps/details?id=com.giladtamam.zigdash).
 
 <!--lint disable double-link-->
