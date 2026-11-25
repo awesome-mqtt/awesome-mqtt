@@ -222,6 +222,9 @@ Contributions welcome! Read the [contribution guidelines](contributing.md) first
 ### Java
 
 - [hivemq-mqtt-client](https://github.com/hivemq/hivemq-mqtt-client) - High-performance Java MQTT client library with different API flavours for MQTT 5.0 and 3.1.1.
+<!--lint disable double-link-->
+- [PLCcom MQTT for Java](https://www.indi-an.com/en/plccom/mqtt/mqtt-overview/) - Commercial MQTT client and broker SDK for Java with MQTT 3.1.1 and 5.0, TLS, WebSocket and an embeddable broker.
+<!--lint enable double-link-->
 
 ### Erlang or Elixir
 
@@ -250,6 +253,9 @@ Contributions welcome! Read the [contribution guidelines](contributing.md) first
 
 - [HiveMQtt](https://github.com/hivemq/hivemq-mqtt-client-dotnet) - MQTT 5.0 compliant secure client with automatic back pressure management and TCP & WebSocket transport support.
 - [MQTTnet](https://github.com/chkr1011/MQTTnet) - MQTT client and broker .NET implementations.
+<!--lint disable double-link-->
+- [PLCcom MQTT for .NET](https://www.indi-an.com/en/plccom/mqtt/mqtt-overview/) - Commercial MQTT client and broker SDK for .NET with MQTT 3.1.1 and 5.0, TLS, WebSocket and an embeddable broker.
+<!--lint enable double-link-->
 
 ### Delphi
 
