@@ -349,6 +349,7 @@ Here are complete firmwares to turn them into MQTT-controlled smart home nodes:
 - [spicierModbus2mqtt](https://github.com/mbs38/spicierModbus2mqtt) - Modbus master which publishes register values via MQTT.
 - [mqtt2opcua](https://github.com/nzfarmer1/mqtt2opcua) - Bi Directional MQTT to OPCUA Bridge.
 - [OPC Router](https://www.opc-router.com/4_1-mqtt-client-opc-router-plug-in-en/) - MQTT Gateway (publisher/subscriber) with various plug-ins (OPC UA Bridge, SQL Bridge, REST Bridge, SAP Bridge).
+- [tagbridge](https://github.com/DanShinde/tagbridge) - Config-driven Modbus and OPC UA to MQTT gateway with Sparkplug B and Unified Namespace output.
 
 
 ### Telephony, PBX
