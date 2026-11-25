@@ -379,6 +379,7 @@ Here are complete firmwares to turn them into MQTT-controlled smart home nodes:
 - [SolidPing](https://github.com/fclairamb/solidping) - Uptime monitoring with an MQTT broker check that connects (optional TLS and auth), publishes a message on a topic and waits for it to come back, recording connect and round-trip times. Also HTTP, TCP, DNS and many other check types, self-hosted or hosted.
 - [ccusage-mqtt](https://github.com/george-vice/ccusage-mqtt) - Publishes Claude Code (Anthropic's AI coding agent) usage telemetry to MQTT with Home Assistant auto-discovery. 15 sensors, mood classifier.
 - [check-mqtt](https://github.com/jpmens/check-mqtt) - A Nagios/Icinga plugin for checking connectivity to an MQTT broker.
+- [iotaudit](https://github.com/emirmrkaljevic/iotaudit) - Local CLI that grades your own smart home devices and publishes the results to MQTT with Home Assistant discovery.
 - [nag2mqtt](https://github.com/DE-IBH/nag2mqtt) - Nagios event broker to MQTT gateway.
 - [notify-by-mqtt](https://github.com/jpmens/notify-by-mqtt) - A Nagios/Icinga notification module which wraps data into JSON and fires it off to an MQTT broker.
 - [mqtt2notifysend](https://github.com/David-Lor/MQTT2NotifySend) - Subscribe to a topic and show notifications from MQTT messages on Ubuntu & other notify-send compatible Linux distros.
